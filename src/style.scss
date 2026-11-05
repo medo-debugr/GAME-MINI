@@ -1,0 +1,30 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #222; touch-action: none; user-select: none; -webkit-user-select: none; }
+#game { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; }
+#ctl { display: none; position: fixed; inset: 0; pointer-events: none; z-index: 10; font-family: Arial, sans-serif; }
+body.touch #ctl { display: block; }
+#ctl .b, #ctl .stick { position: absolute; border-radius: 50%; border: 3px solid rgba(255,255,255,.75); background: rgba(40,50,60,.32); box-sizing: border-box; pointer-events: auto; touch-action: none; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 7vh; }
+#ctl .stick { width: 27vh; height: 27vh; }
+#ctl .knob { width: 55%; height: 55%; border-radius: 50%; background: rgba(230,240,245,.5); border: 2px solid rgba(255,255,255,.85); display: flex; align-items: center; justify-content: center; font-size: 8vh; pointer-events: none; }
+#sL { left: 4vw; bottom: 5vh; }
+#sR { right: 22vw; bottom: 3vh; width: 30vh; height: 30vh; }
+#bGren { left: 30vw; bottom: 2vh; width: 24vh; height: 24vh; }
+#bGren i { position: absolute; right: 12%; bottom: 10%; font: 700 4.5vh Arial; font-style: normal; }
+#bSwap { right: 1.5vw; top: 2vh; width: 25vh; height: 25vh; }
+#bZoom { left: 2vw; top: 2vh; width: 15vh; height: 15vh; font-size: 4vh; font-weight: 700; }
+#ctl .sm { width: 15vh; height: 15vh; font-size: 6vh; }
+#bMelee { left: 12vw; bottom: 36vh; }
+#bRel { right: 4vw; bottom: 26vh; }
+#over { display: none; position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.65); align-items: center; justify-content: center; text-align: center; color: #fff; font-family: Arial, sans-serif; }
+#over.show { display: flex; }
+#over h1 { margin: 0 0 10px; letter-spacing: 3px; }
+#over p { font-size: 20px; line-height: 1.6; }
+#over button { margin-top: 12px; padding: 12px 28px; font: 700 16px Arial; border: 0; border-radius: 8px; background: #5be36b; cursor: pointer; }
+
+#lpv { display: block; margin: 0 auto 8px; max-width: 100%; border: 3px solid #7d868e; border-radius: 8px; }
+#lmap, #ltime { font: 700 18px Arial; letter-spacing: 2px; margin-bottom: 10px; }
+#net textarea { width: 100%; height: 90px; box-sizing: border-box; margin: 8px 0; font: 11px monospace; border-radius: 8px; padding: 6px; resize: none; }
+#nInfo { font-size: 14px; opacity: 1; line-height: 1.5; margin: 0 0 6px; }
+.card button#nBack, .card button#lLeave, .card button#nCopy, .card button#nShare { background: #8fd3ff; }
+.card button#bHost, .card button#bJoin { background: #ffd34d; }
+.card button#lPrev, .card button#lNext, .card button#lMaps, .card button#tM, .card button#tP { background: #8fd3ff; }
+.ov .card { color: #fff; font-family: Arial, sans-serif; text-align: center; }
